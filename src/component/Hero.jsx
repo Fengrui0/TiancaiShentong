@@ -7,7 +7,7 @@ export default function Hero() {
               科技守护清晰视界
             </h1>
             <p className="text-blue-100 mt-3 max-w-2xl">
-              智能镜片 · 虚拟试戴 · 专业配镜服务
+              融合光学与科技，为未来用眼健康保驾护航
             </p>
             <div className="mt-6 flex gap-3">
               <a
@@ -20,7 +20,7 @@ export default function Hero() {
                 href="#franchise"
                 className="px-4 py-2 rounded-lg text-white ring-1 ring-white/40 bg-blue-900/30"
               >
-                招商加盟
+                了解更多
               </a>
             </div>
           </div>
