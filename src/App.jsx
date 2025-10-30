@@ -1,25 +1,16 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-// src/App.jsx
 import Nav from './component/Nav'
-import Hero from './component/Hero'
-import Features from './component/Features';
-import Product from './component/Product';
-import Franchise from './component/Franchise';
-import News from './component/News';
-import Testinomials from './component/Testinomials';
+import Home from './pages/Home';
 import Footer from './component/Footer';
+import {Routes, Route} from "react-router-dom";
 export default function App() {
   return (
     <div className="min-h-screen flex flex-col bg-white text-gray-900">
       <Nav />
-      <Hero />
-      <Features />
-      <Product />
-      <Franchise />
-      <News />
-      <Testinomials />
+      <main className="flex-1">
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </main>
       <Footer />
     </div>
   );
