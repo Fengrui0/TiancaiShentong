@@ -1,3 +1,7 @@
+import storeFront from "../assets/franchise/home1.png"
+import indoor1 from "../assets/franchise/home2.png"
+import indoor2 from "../assets/franchise/home3.png"
+import indoor3 from "../assets/franchise/home4.png"
 export default function FranchisePreview(){
     return(
         <section id="franchise" className="py-20 bg-gray-50">
@@ -27,6 +31,38 @@ export default function FranchisePreview(){
                 <p className="mt-2 text-gray-600 text-sm">结合智能护眼市场增长趋势，实现规模化拓展与收益提升。</p>
             </div>
             </div>
+            {/* —— 图片展示区 —— */}
+            <div className="mt-12 space-y-4">
+            {/* 第一行：大图 */}
+            <div className="overflow-hidden rounded-2xl">
+                <img
+                src={storeFront} // TODO: 换成你的实际路径
+                alt="品牌门店外景"
+                className="w-full h-[400px] object-cover hover:scale-105 transition-transform duration-500 ease-out"
+                />
+            </div>
+
+            {/* 第二行：三张等宽小图 */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                {[
+                { src: indoor1, alt: "展示厅" },
+                { src: indoor2, alt: "体验区" },
+                { src: indoor3, alt: "荣誉墙" },
+                ].map((img, i) => (
+                <div
+                    key={i}
+                    className="overflow-hidden rounded-2xl bg-gray-100 group"
+                >
+                    <img
+                    src={img.src}
+                    alt={img.alt}
+                    className="w-full h-[260px] object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+                    />
+                </div>
+                ))}
+            </div>
+            </div>
+
 
             {/* CTA */}
             <div className="mt-10">
