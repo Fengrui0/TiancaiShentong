@@ -1,7 +1,7 @@
-import storeFront from "../assets/franchise/home1.png"
-import indoor1 from "../assets/franchise/home2.png"
-import indoor2 from "../assets/franchise/home3.png"
-import indoor3 from "../assets/franchise/home4.png"
+import storeFront from "../assets/images/franchise/home1.png"
+import indoor1 from "../assets/images/franchise/home2.png"
+import indoor2 from "../assets/images/franchise/home3.png"
+import indoor3 from "../assets/images/franchise/home4.png"
 export default function FranchisePreview(){
     return(
         <section id="franchise" className="py-20 bg-gray-50">
